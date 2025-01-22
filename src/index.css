@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --emerald: #3ECF8E;
+  --dark-1: #1C1C1C;
+  --dark-2: #2A2A2A;
+  --dark-3: #323232;
+}
+
+body {
+  @apply bg-[#1C1C1C];
+  color-scheme: dark;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-emerald-600;
+}
+
+.emerald-glow {
+  box-shadow: 0 0 20px rgba(62, 207, 142, 0.2);
+}
+
+.gradient-border {
+  position: relative;
+  border: double 1px transparent;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(#1C1C1C, #1C1C1C), 
+                    linear-gradient(to right, #3ECF8E, #64D9A8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
